@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Клик Маркет — агрегатор</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- ШАПКА -->
+  <header class="header">
+    <div class="logo-wrap">
+      <a class="logo-link" href="#" data-action="home">
+        <img src="logo.jpg" alt="Клик Маркет логотип" class="logo-img"/>
+        <span class="logo-text">Клик Маркет</span>
+      </a>
+    </div>
+
+<nav class="nav">
+  <a href="#" class="nav-link" data-action="home">
+    <img class="nav-icon" src="home.jpg" alt="Главная">
+    <span>Главная</span>
+  </a>
+
+  <a href="#" class="nav-link" data-action="favorites">
+    <img class="nav-icon" src="favorites.jpg" alt="Избранное">
+    <span>Избранное</span>
+  </a>
+
+  <a href="#" class="nav-link" data-action="cart">
+    <img class="nav-icon" src="cart.jpg" alt="Корзина">
+    <span>Корзина</span>
+  </a>
+
+  <a href="#" class="nav-link" data-action="profile">
+    <img class="nav-icon" src="profile.jpg" alt="Профиль">
+    <span>Профиль</span>
+  </a>
+</nav>
+
+  </header>
+
+  <!-- HOME -->
+  <main id="homePage" class="page">
+    <!-- ГЛАВНЫЙ БАННЕР -->
+    <section class="hero">
+      <h1>Сравнение цен с международных площадок</h1>
+      <p>Мы показываем сначала самые выгодные предложения.</p>
+    </section>
+
+    <!-- КАТЕГОРИИ -->
+    <section class="categories">
+      <h2>Категории</h2>
+      <div class="cat-grid">
+        <button class="cat-card" data-category="electronics" title="Электроника">
+          <div class="cat-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" width="48" height="48">
+              <rect x="6" y="8" width="28" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+              <rect x="36" y="12" width="6" height="14" rx="1.5" fill="none" stroke="currentColor" stroke-width="2"/>
+              <rect x="14" y="30" width="12" height="2" fill="currentColor"/>
+            </svg>
+          </div>
+          <div class="cat-title">Электроника</div>
+        </button>
+
+        <button class="cat-card" data-category="clothes" title="Одежда">
+          <div class="cat-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" width="48" height="48">
+              <path d="M24 10c2 0 3.5 1.5 3.5 3.5S26 17 24 17s-3.5-1.5-3.5-3.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M10 20l8-4h12l8 4v16H10V20z" fill="none" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <div class="cat-title">Одежда</div>
+        </button>
+
+        <button class="cat-card" data-category="beauty" title="Косметика">
+          <div class="cat-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" width="48" height="48">
+              <rect x="18" y="8" width="12" height="6" rx="1" fill="none" stroke="currentColor" stroke-width="2"/>
+              <rect x="14" y="14" width="20" height="22" rx="3" fill="none" stroke="currentColor" stroke-width="2"/>
+              <line x1="24" y1="14" x2="24" y2="36" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <div class="cat-title">Косметика</div>
+        </button>
+
+        <button class="cat-card" data-category="home" title="Товары для дома">
+          <div class="cat-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" width="48" height="48">
+              <path d="M8 24L24 10l16 14v14H8V24z" fill="none" stroke="currentColor" stroke-width="2"/>
+              <rect x="18" y="28" width="12" height="10" fill="none" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <div class="cat-title">Для дома</div>
+        </button>
+      </div>
+    </section>
+
+    <!-- КАТАЛОГ -->
+    <section id="catalog" class="catalog hidden">
+      <div class="catalog-head">
+        <button id="backToCategories" class="btn-link">← К категориям</button>
+        <h2 id="catalogTitle">Каталог</h2>
+      </div>
+
+      <div class="search-row">
+        <div class="search-col">
+          <input id="searchInput" type="text" placeholder="Поиск в категории…"/>
+          <div id="searchDropdown" class="search-dropdown hidden"></div>
+        </div>
+
+        <div class="filters">
+          <div class="filter">
+            <label for="colorSelect">Цвет</label>
+            <select id="colorSelect">
+              <option value="">Любой</option>
+            </select>
+          </div>
+          <div class="filter">
+            <label for="sizeSelect">Размер</label>
+            <select id="sizeSelect">
+              <option value="">Любой</option>
+            </select>
+          </div>
+          <div class="filter">
+            <label for="priceSelect">Цена</label>
+            <select id="priceSelect">
+              <option value="">Без ограничения</option>
+              <option value="0-2000">до 2 000</option>
+              <option value="2000-10000">2 000–10 000</option>
+              <option value="10000-30000">10 000–30 000</option>
+              <option value="30000-999999">30 000+</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div id="productsGrid" class="products-grid"></div>
+    </section>
+  </main>
+
+  <!-- ИЗБРАННОЕ -->
+  <section id="favoritesPage" class="page hidden">
+    <div class="page-head">
+      <h2>Избранное</h2>
+      <p class="muted">Товары, которые ты отметил ❤️</p>
+    </div>
+    <div id="favoritesGrid" class="products-grid"></div>
+    <div id="favoritesEmpty" class="empty hidden">
+      Пока пусто. Открой категорию и нажми ❤️ на товаре.
+    </div>
+  </section>
+
+  <!-- КОРЗИНА -->
+  <section id="cartPage" class="page hidden">
+    <div class="page-head">
+      <h2>Корзина</h2>
+      <p class="muted">Тут выбранные товары (это агрегатор — покупка по ссылке на внешний сайт).</p>
+    </div>
+
+    <div id="cartList" class="cart-list"></div>
+
+    <div id="cartEmpty" class="empty hidden">
+      Корзина пустая. Добавь товар кнопкой «В корзину».
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Итого:</span>
+        <strong id="cartTotal">0 ₽</strong>
+      </div>
+      <button id="checkoutBtn" class="btn-primary">Оформить (демо)</button>
+    </div>
+  </section>
+
+  <!-- ПРОФИЛЬ -->
+  <section id="profilePage" class="page hidden">
+    <div class="page-head">
+      <h2>Профиль</h2>
+      <p class="muted">Демо-профиль. Данные сохраняются в браузере.</p>
+    </div>
+
+    <div class="profile-grid">
+      <form id="profileForm" class="card form-card">
+        <div class="form-row">
+          <label>Имя</label>
+          <input type="text" id="profileName" placeholder="Например: Данте"/>
+        </div>
+        <div class="form-row">
+          <label>Email</label>
+          <input type="email" id="profileEmail" placeholder="name@mail.com"/>
+        </div>
+        <div class="form-row">
+          <label>Телефон</label>
+          <input type="tel" id="profilePhone" placeholder="+7 ..."/>
+        </div>
+        <div class="form-row">
+          <label>Город</label>
+          <input type="text" id="profileCity" placeholder="Город"/>
+        </div>
+        <div class="form-actions">
+          <button class="btn-primary" type="submit">Сохранить</button>
+          <button class="btn-ghost" type="button" id="resetProfileBtn">Сбросить</button>
+        </div>
+      </form>
+
+      <div class="card stats-card">
+        <h3>Статистика</h3>
+        <div class="stats">
+          <div class="stat">
+            <div class="stat-num" id="statFav">0</div>
+            <div class="stat-label">в избранном</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num" id="statCart">0</div>
+            <div class="stat-label">в корзине</div>
+          </div>
+        </div>
+        <div class="hint">
+          <b>Важно для диплома:</b> сейчас это “фронт”, без бэкенда. Дальше можно подключить API/парсер/агрегатор.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- МОДАЛКА -->
+  <div id="modalOverlay" class="modal-overlay hidden" role="dialog" aria-modal="true">
+    <div class="modal">
+      <button id="modalClose" class="modal-close" aria-label="Закрыть">✕</button>
+      <div class="modal-body">
+        <div class="modal-media">
+          <img id="modalImage" alt="Фото товара">
+        </div>
+        <div class="modal-info">
+          <h3 id="modalTitle"></h3>
+          <div class="modal-price" id="modalPrice"></div>
+          <div class="modal-meta" id="modalMeta"></div>
+
+          <div class="modal-actions">
+            <a id="modalGoLink" class="btn-primary" href="#" target="_blank" rel="noopener">Перейти на сайт</a>
+            <button id="modalFavBtn" class="btn-ghost" type="button">❤️ В избранное</button>
+            <button id="modalCartBtn" class="btn-ghost" type="button">🛒 В корзину</button>
+          </div>
+
+          <p class="muted small">
+            Мы не продаём товары — мы показываем предложения. Покупка происходит на сайте-источнике.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ФУТЕР -->
+  <footer class="footer">
+    <p>© 2025 Клик Маркет. Самые выгодные предложения — в один клик.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
