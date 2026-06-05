@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Клик Маркет — агрегатор</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ШАПКА -->
+  <header class="header">
+    <a class="logo-link nav-link" href="#" data-action="home">
+      <img src="logo.jpg" alt="Клик Маркет логотип" class="logo-img" />
+      <span class="logo-text">Клик Маркет</span>
+    </a>
+
+    <nav class="nav">
+      <a href="#" class="nav-link is-active" data-action="home">
+        <span class="nav-icon">⌂</span>
+        <span>Главная</span>
+      </a>
+
+      <a href="#" class="nav-link" data-action="favorites">
+        <span class="nav-icon">♥</span>
+        <span>Избранное</span>
+        <span id="favBadge" class="nav-badge hidden">0</span>
+      </a>
+
+      <a href="#" class="nav-link" data-action="cart">
+        <span class="nav-icon">🛒</span>
+        <span>Корзина</span>
+        <span id="cartBadge" class="nav-badge hidden">0</span>
+      </a>
+
+      <a href="#" class="nav-link" data-action="profile">
+        <span class="nav-icon">👤</span>
+        <span>Профиль</span>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ГЛАВНАЯ -->
+    <section id="homePage" class="page">
+      <section class="hero hero-modern">
+        <div class="hero-content">
+          <div class="hero-label">Агрегатор цен</div>
+
+          <h1>Находите выгодные товары быстрее</h1>
+
+          <p>
+            Клик Маркет помогает сравнивать предложения с разных площадок,
+            сохранять товары в избранное и выбирать лучший вариант без лишних вкладок.
+          </p>
+
+          <div class="hero-actions">
+            <button class="hero-btn hero-btn-dark" id="startSearchBtn" type="button">Начать поиск</button>
+            <button class="hero-btn hero-btn-light" id="howItWorksBtn" type="button">Как это работает</button>
+          </div>
+
+          <div class="hero-stats">
+            <div>
+              <strong>4</strong>
+              <span>категории</span>
+            </div>
+            <div>
+              <strong>24+</strong>
+              <span>товара в демо</span>
+            </div>
+            <div>
+              <strong>1</strong>
+              <span>удобный интерфейс</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-orbit"></div>
+
+          <div class="visual-card visual-card-main">
+            <div class="visual-card-top">
+              <span class="mini-dot"></span>
+              <span class="mini-line"></span>
+            </div>
+
+            <div class="visual-product">
+              <div class="visual-img">🛒</div>
+              <div>
+                <div class="visual-title">Сравнение цен</div>
+                <div class="visual-subtitle">лучшее предложение первым</div>
+              </div>
+            </div>
+
+            <div class="visual-price-row">
+              <span>Ozon</span>
+              <strong>14 990 ₽</strong>
+            </div>
+            <div class="visual-price-row best">
+              <span>WB</span>
+              <strong>13 790 ₽</strong>
+            </div>
+            <div class="visual-price-row">
+              <span>AliExpress</span>
+              <strong>15 430 ₽</strong>
+            </div>
+          </div>
+
+          <div class="floating-badge badge-one">−12%</div>
+          <div class="floating-badge badge-two">♥</div>
+          <div class="floating-badge badge-three">₽</div>
+        </div>
+      </section>
+
+      <section class="advantages reveal">
+        <div class="section-title">
+          <span>Преимущества</span>
+          <h2>Что умеет Клик Маркет</h2>
+        </div>
+
+        <div class="advantages-grid">
+          <div class="adv-card">
+            <div class="adv-icon">₽</div>
+            <h3>Сравнение цен</h3>
+            <p>Показываем предложения по возрастанию цены, чтобы выгодный вариант был заметен сразу.</p>
+          </div>
+
+          <div class="adv-card">
+            <div class="adv-icon">🔎</div>
+            <h3>Поиск и фильтры</h3>
+            <p>Пользователь может выбрать категорию, ввести запрос и уточнить параметры товара.</p>
+          </div>
+
+          <div class="adv-card">
+            <div class="adv-icon">♥</div>
+            <h3>Избранное</h3>
+            <p>Понравившиеся товары можно сохранить и вернуться к ним позже.</p>
+          </div>
+
+          <div class="adv-card">
+            <div class="adv-icon">🛒</div>
+            <h3>Корзина</h3>
+            <p>Корзина используется как список выбранных предложений перед переходом к продавцу.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="how-it-works reveal" id="howItWorks">
+        <div class="section-title">
+          <span>Сценарий</span>
+          <h2>Как это работает</h2>
+        </div>
+
+        <div class="steps">
+          <div class="step-card">
+            <div class="step-number">01</div>
+            <h3>Выбор категории</h3>
+            <p>Пользователь выбирает нужный раздел: электроника, одежда, косметика или товары для дома.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">02</div>
+            <h3>Поиск товара</h3>
+            <p>Внутри категории можно ввести название товара и применить фильтры.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">03</div>
+            <h3>Сравнение</h3>
+            <p>Карточки показывают цену, источник, описание и ссылку на площадку.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">04</div>
+            <h3>Выбор</h3>
+            <p>Товар можно открыть подробнее, добавить в избранное или положить в корзину.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- КАТЕГОРИИ -->
+      <section class="categories reveal">
+        <h2>Категории</h2>
+
+        <div class="cat-grid">
+          <button class="cat-card" data-category="electronics" type="button">
+            <div class="cat-icon">💻</div>
+            <div class="cat-title">Электроника</div>
+          </button>
+
+          <button class="cat-card" data-category="clothes" type="button">
+            <div class="cat-icon">👕</div>
+            <div class="cat-title">Одежда</div>
+          </button>
+
+          <button class="cat-card" data-category="beauty" type="button">
+            <div class="cat-icon">💄</div>
+            <div class="cat-title">Косметика</div>
+          </button>
+
+          <button class="cat-card" data-category="home" type="button">
+            <div class="cat-icon">🏠</div>
+            <div class="cat-title">Для дома</div>
+          </button>
+        </div>
+      </section>
+
+      <!-- КАТАЛОГ -->
+      <section id="catalog" class="catalog hidden">
+        <div class="catalog-head">
+          <button id="backToCategories" class="btn-link" type="button">← К категориям</button>
+          <h2 id="catalogTitle">Каталог</h2>
+        </div>
+
+        <div class="search-row">
+          <div class="search-col">
+            <input id="searchInput" type="text" placeholder="Поиск в категории…" />
+            <div id="searchDropdown" class="search-dropdown hidden"></div>
+          </div>
+
+          <div class="filters">
+            <div class="filter">
+              <label for="colorSelect">Цвет</label>
+              <select id="colorSelect">
+                <option value="">Любой</option>
+              </select>
+            </div>
+
+            <div class="filter">
+              <label for="sizeSelect">Размер</label>
+              <select id="sizeSelect">
+                <option value="">Любой</option>
+              </select>
+            </div>
+
+            <div class="filter">
+              <label for="priceSelect">Цена</label>
+              <select id="priceSelect">
+                <option value="">Без ограничения</option>
+                <option value="0-1000">до 1 000</option>
+                <option value="1000-5000">1 000–5 000</option>
+                <option value="5000-15000">5 000–15 000</option>
+                <option value="15000-999999">15 000+</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div id="productsGrid" class="products-grid"></div>
+      </section>
+
+      <section class="main-cta reveal">
+        <div>
+          <h2>Готовы найти выгодное предложение?</h2>
+          <p>Начните с категории и сравните товары в несколько кликов.</p>
+        </div>
+
+        <button class="hero-btn hero-btn-dark" id="ctaSearchBtn" type="button">Перейти к категориям</button>
+      </section>
+    </section>
+
+    <!-- ИЗБРАННОЕ -->
+    <section id="favoritesPage" class="page hidden favorites-page">
+      <div class="favorites-hero reveal">
+        <div class="favorites-hero-text">
+          <div class="page-label">Избранное</div>
+          <h2>Товары, которые ты отметил ❤️</h2>
+          <p>
+            Здесь хранятся понравившиеся товары. Можно быстро вернуться к ним,
+            сравнить цены и добавить нужное предложение в корзину.
+          </p>
+        </div>
+
+        <div class="favorites-hero-visual" aria-hidden="true">
+          <div class="fav-heart-big">♥</div>
+          <div class="fav-orbit fav-orbit-one"></div>
+          <div class="fav-orbit fav-orbit-two"></div>
+        </div>
+      </div>
+
+      <div id="favoritesEmpty" class="favorites-empty hidden reveal">
+        <div class="empty-illustration">
+          <div class="empty-heart">♥</div>
+          <div class="empty-spark spark-one">✦</div>
+          <div class="empty-spark spark-two">✧</div>
+          <div class="empty-spark spark-three">✦</div>
+        </div>
+
+        <h3>Пока здесь пусто</h3>
+        <p>Открой каталог и нажми на сердечко ❤️, чтобы сохранить понравившиеся товары.</p>
+
+        <button id="goShoppingFromFav" class="fav-main-btn" type="button">Перейти к покупкам</button>
+      </div>
+
+      <div id="favoritesGrid" class="products-grid favorites-grid"></div>
+
+      <section class="recommendations reveal">
+        <div class="recommendations-head">
+          <div>
+            <span>Рекомендации</span>
+            <h3>Возможно, тебе понравится</h3>
+          </div>
+
+          <button id="refreshRecommendations" class="recommend-refresh" type="button">Обновить</button>
+        </div>
+
+        <div id="recommendationsGrid" class="products-grid recommendations-grid"></div>
+      </section>
+    </section>
+
+    <!-- КОРЗИНА -->
+    <section id="cartPage" class="page hidden cart-page">
+      <div class="cart-hero reveal">
+        <div class="cart-hero-text">
+          <div class="page-label">Корзина</div>
+          <h2>Товары для покупки</h2>
+          <p>Здесь собраны предложения, которые ты выбрал. Можно сравнить итоговую сумму, перейти к продавцу или открыть демо-оплату.</p>
+        </div>
+
+        <div class="cart-hero-visual" aria-hidden="true">
+          <div class="cart-bag">🛒</div>
+          <div class="cart-float cart-float-one">₽</div>
+          <div class="cart-float cart-float-two">✓</div>
+          <div class="cart-float cart-float-three">%</div>
+        </div>
+      </div>
+
+      <div class="cart-layout reveal">
+        <div class="cart-main">
+          <div id="cartEmpty" class="cart-empty hidden">
+            <div class="cart-empty-icon">🛒</div>
+            <h3>Корзина пока пуста</h3>
+            <p>Добавь товары из каталога, чтобы сравнить предложения и перейти к покупке.</p>
+            <button id="goShoppingFromCart" class="cart-main-btn" type="button">Перейти к товарам</button>
+          </div>
+
+          <div id="cartList" class="cart-list"></div>
+        </div>
+
+        <aside class="cart-summary">
+          <div class="summary-card">
+            <span class="summary-label">Итог заказа</span>
+
+            <div class="summary-row">
+              <span>Товаров</span>
+              <strong id="cartItemsCount">0</strong>
+            </div>
+
+            <div class="summary-row">
+              <span>Источники</span>
+              <strong id="cartSourcesCount">0</strong>
+            </div>
+
+            <div class="summary-row">
+              <span>Экономия</span>
+              <strong>демо</strong>
+            </div>
+
+            <div class="summary-total">
+              <span>Итого</span>
+              <strong id="cartTotal">0 ₽</strong>
+            </div>
+
+            <button id="checkoutBtn" class="checkout-premium-btn" type="button">Перейти к оплате</button>
+
+            <p class="summary-note">
+              Это демо-корзина дипломного проекта. В реальной версии покупка выполняется через продавца или платёжный сервис.
+            </p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ПРОФИЛЬ -->
+    <section id="profilePage" class="page hidden profile-page">
+      <div class="profile-hero reveal">
+        <div class="profile-hero-text">
+          <div class="page-label">Профиль</div>
+          <h2>Личный кабинет</h2>
+          <p>Управляй личными данными, избранным и корзиной в одном месте.</p>
+        </div>
+
+        <div class="profile-avatar-card">
+          <div class="profile-avatar">👤</div>
+          <div>
+            <strong id="profilePreviewName">Пользователь</strong>
+            <span>Клик Маркет</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="profile-layout reveal">
+        <form id="profileForm" class="profile-card">
+          <div class="profile-card-head">
+            <div>
+              <span>Данные</span>
+              <h3>Информация пользователя</h3>
+            </div>
+            <div class="profile-mini-icon">✎</div>
+          </div>
+
+          <label>
+            <span>Имя</span>
+            <input id="profileName" type="text" placeholder="Введите имя" />
+          </label>
+
+          <label>
+            <span>Email</span>
+            <input id="profileEmail" type="email" placeholder="name@mail.com" />
+          </label>
+
+          <label>
+            <span>Телефон</span>
+            <input id="profilePhone" type="tel" placeholder="+7 999 000 00 00" />
+          </label>
+
+          <label>
+            <span>Город</span>
+            <input id="profileCity" type="text" placeholder="Москва" />
+          </label>
+
+          <div class="profile-actions">
+            <button class="profile-save-btn" type="submit">Сохранить</button>
+            <button id="resetProfileBtn" class="profile-reset-btn" type="button">Сбросить</button>
+          </div>
+        </form>
+
+        <div class="profile-side">
+          <div class="profile-stats-card">
+            <div class="profile-card-head">
+              <div>
+                <span>Активность</span>
+                <h3>Статистика</h3>
+              </div>
+              <div class="profile-mini-icon">↗</div>
+            </div>
+
+            <div class="profile-stats-grid">
+              <div class="stat-card">
+                <strong id="statFav">0</strong>
+                <span>в избранном</span>
+              </div>
+
+              <div class="stat-card">
+                <strong id="statCart">0</strong>
+                <span>в корзине</span>
+              </div>
+
+              <div class="stat-card">
+                <strong>24</strong>
+                <span>товара в демо</span>
+              </div>
+
+              <div class="stat-card">
+                <strong>скоро</strong>
+                <span>экономия</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="profile-settings-card">
+            <div class="profile-card-head">
+              <div>
+                <span>Настройки</span>
+                <h3>Параметры профиля</h3>
+              </div>
+              <div class="profile-mini-icon">⚙</div>
+            </div>
+
+            <div class="settings-list">
+              <label class="settings-item">
+                <span>Уведомления о снижении цены</span>
+                <input type="checkbox" checked />
+              </label>
+
+              <label class="settings-item">
+                <span>Показывать выгодные предложения первыми</span>
+                <input type="checkbox" checked />
+              </label>
+
+              <label class="settings-item">
+                <span>Сохранять историю выбора</span>
+                <input type="checkbox" />
+              </label>
+            </div>
+          </div>
+
+          <div class="diploma-note-card">
+            <strong>Важно для диплома:</strong>
+            <p>
+              Сейчас это фронт-прототип. В дальнейшем можно подключить API, парсер,
+              авторизацию и хранение данных на сервере.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- МОДАЛЬНОЕ ОКНО ТОВАРА -->
+<div id="modalOverlay" class="modal-overlay hidden">
+  <div class="product-modal product-modal-premium">
+    <button id="modalClose" class="modal-close" type="button">×</button>
+
+    <div class="modal-left">
+      <div class="modal-image-frame">
+        <img id="modalImage" class="modal-img" src="" alt="Фото товара" />
+      </div>
+
+      <div class="modal-mini-badges">
+        <span>Сравнение цен</span>
+        <span>Выгодное предложение</span>
+        <span>Быстрый переход</span>
+      </div>
+    </div>
+
+    <div class="modal-right">
+      <div class="modal-top-info">
+        <div class="modal-label">Карточка товара</div>
+        <h2 id="modalTitle">Название товара</h2>
+        <p id="modalPrice" class="modal-price">Цена: 0 ₽</p>
+      </div>
+
+      <div id="modalMeta" class="modal-meta premium-meta">
+        <!-- характеристики товара подставляются через script.js -->
+      </div>
+
+      <div class="modal-benefits">
+        <div class="modal-benefit">
+          <span>₽</span>
+          <div>
+            <strong>Сравнение цены</strong>
+            <p>Предложение можно сравнить с другими товарами.</p>
+          </div>
+        </div>
+
+        <div class="modal-benefit">
+          <span>♥</span>
+          <div>
+            <strong>Избранное</strong>
+            <p>Сохрани товар, чтобы вернуться к нему позже.</p>
+          </div>
+        </div>
+
+        <div class="modal-benefit">
+          <span>🛒</span>
+          <div>
+            <strong>Корзина</strong>
+            <p>Добавь товар в корзину перед покупкой.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-actions premium-modal-actions">
+        <a id="modalGoLink" class="btn-primary modal-buy-btn" href="#" target="_blank" rel="noopener">
+          Перейти на сайт
+        </a>
+
+        <button id="modalFavBtn" class="btn-ghost modal-action-btn" type="button">
+          ❤️ В избранное
+        </button>
+
+        <button id="modalCartBtn" class="btn-ghost modal-action-btn" type="button">
+          🛒 В корзину
+        </button>
+      </div>
+    </div>
+  </div>
+</div><!-- МОДАЛЬНОЕ ОКНО ТОВАРА -->
+<div id="modalOverlay" class="modal-overlay hidden">
+  <div class="product-modal product-modal-premium">
+    <button id="modalClose" class="modal-close" type="button">×</button>
+
+    <div class="modal-left">
+      <div class="modal-image-frame">
+        <img id="modalImage" class="modal-img" src="" alt="Фото товара" />
+      </div>
+
+      <div class="modal-mini-badges">
+        <span>Сравнение цен</span>
+        <span>Выгодное предложение</span>
+        <span>Быстрый переход</span>
+      </div>
+    </div>
+
+    <div class="modal-right">
+      <div class="modal-top-info">
+        <div class="modal-label">Карточка товара</div>
+        <h2 id="modalTitle">Название товара</h2>
+        <p id="modalPrice" class="modal-price">Цена: 0 ₽</p>
+      </div>
+
+      <div id="modalMeta" class="modal-meta premium-meta">
+        <!-- характеристики товара подставляются через script.js -->
+      </div>
+
+      <div class="modal-benefits">
+        <div class="modal-benefit">
+          <span>₽</span>
+          <div>
+            <strong>Сравнение цены</strong>
+            <p>Предложение можно сравнить с другими товарами.</p>
+          </div>
+        </div>
+
+        <div class="modal-benefit">
+          <span>♥</span>
+          <div>
+            <strong>Избранное</strong>
+            <p>Сохрани товар, чтобы вернуться к нему позже.</p>
+          </div>
+        </div>
+
+        <div class="modal-benefit">
+          <span>🛒</span>
+          <div>
+            <strong>Корзина</strong>
+            <p>Добавь товар в корзину перед покупкой.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-actions premium-modal-actions">
+        <a id="modalGoLink" class="btn-primary modal-buy-btn" href="#" target="_blank" rel="noopener">
+          Перейти на сайт
+        </a>
+
+        <button id="modalFavBtn" class="btn-ghost modal-action-btn" type="button">
+          ❤️ В избранное
+        </button>
+
+        <button id="modalCartBtn" class="btn-ghost modal-action-btn" type="button">
+          🛒 В корзину
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- МОДАЛЬНОЕ ОКНО ОПЛАТЫ -->
+  <div id="paymentModal" class="payment-overlay hidden">
+    <div class="payment-modal">
+      <button id="paymentClose" class="payment-close" type="button">×</button>
+
+      <div class="payment-head">
+        <div>
+          <div class="page-label">Оплата</div>
+          <h2>Оформление заказа</h2>
+          <p>Это демонстрационная страница оплаты для дипломного проекта.</p>
+        </div>
+
+        <div class="payment-check-icon">💳</div>
+      </div>
+
+      <div class="payment-grid">
+        <div class="payment-form-card">
+          <h3>Способ оплаты</h3>
+
+          <div class="payment-methods">
+            <label class="payment-method">
+              <input type="radio" name="paymentMethod" checked />
+              <span>💳</span>
+              Банковская карта
+            </label>
+
+            <label class="payment-method">
+              <input type="radio" name="paymentMethod" />
+              <span>⚡</span>
+              СБП
+            </label>
+
+            <label class="payment-method">
+              <input type="radio" name="paymentMethod" />
+              <span>📦</span>
+              При получении
+            </label>
+          </div>
+
+          <h3>Демо-форма карты</h3>
+
+          <div class="payment-fields">
+            <label>
+              <span>Номер карты</span>
+              <input type="text" placeholder="0000 0000 0000 0000" />
+            </label>
+
+            <div class="payment-fields-row">
+              <label>
+                <span>Срок</span>
+                <input type="text" placeholder="MM/YY" />
+              </label>
+
+              <label>
+                <span>CVV</span>
+                <input type="text" placeholder="123" />
+              </label>
+            </div>
+
+            <label>
+              <span>Имя владельца</span>
+              <input type="text" placeholder="IVAN IVANOV" />
+            </label>
+          </div>
+
+          <p class="payment-demo-warning">
+            Данные никуда не отправляются. Это демонстрация интерфейса оплаты.
+          </p>
+        </div>
+
+        <div class="payment-summary-card">
+          <h3>Ваш заказ</h3>
+
+          <div id="paymentItems" class="payment-items"></div>
+
+          <div class="summary-row">
+            <span>Количество</span>
+            <strong id="paymentCount">0</strong>
+          </div>
+
+          <div class="summary-row">
+            <span>Источники</span>
+            <strong id="paymentSources">—</strong>
+          </div>
+
+          <div class="summary-total">
+            <span>К оплате</span>
+            <strong id="paymentTotal">0 ₽</strong>
+          </div>
+
+          <button id="payDemoBtn" class="checkout-premium-btn" type="button">Оплатить демо-заказ</button>
+          <button id="backToCartFromPayment" class="profile-reset-btn payment-back-btn" type="button">Вернуться в корзину</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- УСПЕШНАЯ ОПЛАТА -->
+  <div id="successModal" class="payment-overlay hidden">
+    <div class="success-modal">
+      <div class="success-check">✓</div>
+      <h2>Демо-заказ оформлен</h2>
+      <p>В реальной версии пользователь будет перенаправлен на страницу оплаты или сайт продавца.</p>
+      <button id="successClose" class="checkout-premium-btn" type="button">Отлично</button>
+    </div>
+  </div>
+
+  <div id="toast" class="toast hidden"></div>
+
+  <footer class="footer">
+    <p>© 2025 Клик Маркет. Самые выгодные предложения — в один клик.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="payment-fix.js"></script>
+</body>
+</html>
