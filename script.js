@@ -434,10 +434,10 @@ document.addEventListener("DOMContentLoaded", () => {
   function showPage(action) {
     setActiveNav(action);
 
-    homePage.classList.toggle("hidden", action !== "home");
-    favoritesPage.classList.toggle("hidden", action !== "favorites");
-    cartPage.classList.toggle("hidden", action !== "cart");
-    profilePage.classList.toggle("hidden", action !== "profile");
+    if (homePage) homePage.classList.toggle("hidden", action !== "home");
+    if (favoritesPage) favoritesPage.classList.toggle("hidden", action !== "favorites");
+    if (cartPage) cartPage.classList.toggle("hidden", action !== "cart");
+    if (profilePage) profilePage.classList.toggle("hidden", action !== "profile");
 
     if (action === "favorites") renderFavorites();
     if (action === "cart") renderCart();
@@ -450,10 +450,6 @@ document.addEventListener("DOMContentLoaded", () => {
     link.addEventListener("click", event => {
       event.preventDefault();
       showPage(link.dataset.action || "home");
-    link.addEventListener("click", (e) => {
-      e.preventDefault();
-      const action = link.dataset.action;
-      showPage(action);
     });
   });
 
