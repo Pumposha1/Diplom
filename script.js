@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
   // =========================
-<<<<<<< HEAD
   // ТОВАРЫ
   // =========================
   const PRODUCTS = [
@@ -17,30 +16,10 @@ document.addEventListener("DOMContentLoaded", () => {
       url: "https://www.ozon.ru/",
       image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=80",
       description: "Смартфон для повседневного использования с большим экраном и хорошей автономностью."
-=======
-  // ДЕМО-ДАННЫЕ (ТЕСТОВЫЕ ТОВАРЫ)
-  // картинки — Unsplash (обычно не блокируется, в отличие от маркетплейсов)
-  // =========================
-  const PRODUCTS = [
-    // ELECTRONICS
-    {
-      id: "e1",
-      category: "electronics",
-      name: "Смартфон Galaxy A15 (демо)",
-      price: 14990,
-      color: "Чёрный",
-      size: '6.5"',
-      article: "E-1001",
-      source: "Ozon",
-      url: "https://www.ozon.ru/",
-      image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1200&q=80",
-      description: "Смартфон с большим экраном, базовая камера, хороший вариант для повседневных задач."
->>>>>>> 0a73c6918dab013491d1070cf21c9fed4c46fb25
     },
     {
       id: "e2",
       category: "electronics",
-<<<<<<< HEAD
       name: "Беспроводные наушники Xiaomi Buds",
       price: 4990,
       color: "Белый",
@@ -50,22 +29,10 @@ document.addEventListener("DOMContentLoaded", () => {
       url: "https://www.wildberries.ru/",
       image: "https://upload.wikimedia.org/wikipedia/commons/b/b4/Headphones_1.jpg",
       description: "Беспроводные наушники с кейсом, шумоподавлением и удобной посадкой."
-=======
-      name: "Наушники Xiaomi Buds (демо)",
-      price: 8990,
-      color: "Белый",
-      size: "Универсальный",
-      article: "E-1002",
-      source: "AliExpress",
-      url: "https://aliexpress.ru/",
-      image: "https://upload.wikimedia.org/wikipedia/commons/b/b4/Headphones_1.jpg",
-      description: "Беспроводные наушники: шумоподавление, кейс, комфортная посадка."
->>>>>>> 0a73c6918dab013491d1070cf21c9fed4c46fb25
     },
     {
       id: "e3",
       category: "electronics",
-<<<<<<< HEAD
       name: "Ноутбук Lenovo IdeaPad 3",
       price: 35990,
       color: "Серый",
@@ -121,37 +88,14 @@ document.addEventListener("DOMContentLoaded", () => {
       id: "c1",
       category: "clothes",
       name: "Футболка Nike Air",
-=======
-      name: "Ноутбук IdeaPad 3 (демо)",
-      price: 35990,
-      color: "Серый",
-      size: '14"',
-      article: "E-1003",
-      source: "Wildberries",
-      url: "https://www.wildberries.ru/",
-      image: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=1200&q=80",
-      description: "Учёба, браузер, документы. Демо-карточка для примера выдачи."
-    },
-
-    // CLOTHES
-    {
-      id: "c1",
-      category: "clothes",
-      name: "Футболка Nike Air (демо)",
->>>>>>> 0a73c6918dab013491d1070cf21c9fed4c46fb25
       price: 2490,
       color: "Белый",
       size: "M",
       article: "C-2001",
       source: "Lamoda",
       url: "https://www.lamoda.ru/",
-<<<<<<< HEAD
       image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=80",
       description: "Базовая хлопковая футболка для повседневного образа."
-=======
-      image: "https://images.unsplash.com/photo-1520975916090-3105956dac38?auto=format&fit=crop&w=1200&q=80",
-      description: "Базовая футболка, удобная посадка. Для примера фильтра по размеру/цвету."
->>>>>>> 0a73c6918dab013491d1070cf21c9fed4c46fb25
     },
     {
       id: "c2",
