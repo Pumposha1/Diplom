@@ -388,6 +388,7 @@
         </div>
       </div>
 
+<<<<<<< HEAD
       <div class="profile-layout reveal">
         <form id="profileForm" class="profile-card">
           <div class="profile-card-head">
@@ -729,10 +730,124 @@
           <button id="payDemoBtn" class="checkout-premium-btn" type="button">Оплатить демо-заказ</button>
           <button id="backToCartFromPayment" class="profile-reset-btn payment-back-btn" type="button">Вернуться в корзину</button>
         </div>
+=======
+      <div id="productsGrid" class="products-grid"></div>
+    </section>
+  </main>
+
+  <!-- ИЗБРАННОЕ -->
+  <section id="favoritesPage" class="page hidden">
+    <div class="page-head">
+      <h2>Избранное</h2>
+      <p class="muted">Товары, которые ты отметил ❤️</p>
+    </div>
+    <div id="favoritesGrid" class="products-grid"></div>
+    <div id="favoritesEmpty" class="empty hidden">
+      Пока пусто. Открой категорию и нажми ❤️ на товаре.
+    </div>
+  </section>
+
+  <!-- КОРЗИНА -->
+  <section id="cartPage" class="page hidden">
+    <div class="page-head">
+      <h2>Корзина</h2>
+      <p class="muted">Тут выбранные товары (это агрегатор — покупка по ссылке на внешний сайт).</p>
+    </div>
+
+    <div id="cartList" class="cart-list"></div>
+
+    <div id="cartEmpty" class="empty hidden">
+      Корзина пустая. Добавь товар кнопкой «В корзину».
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Итого:</span>
+        <strong id="cartTotal">0 ₽</strong>
+      </div>
+      <button id="checkoutBtn" class="btn-primary">Оформить (демо)</button>
+    </div>
+  </section>
+
+  <!-- ПРОФИЛЬ -->
+  <section id="profilePage" class="page hidden">
+    <div class="page-head">
+      <h2>Профиль</h2>
+      <p class="muted">Демо-профиль. Данные сохраняются в браузере.</p>
+    </div>
+
+    <div class="profile-grid">
+      <form id="profileForm" class="card form-card">
+        <div class="form-row">
+          <label>Имя</label>
+          <input type="text" id="profileName" placeholder="Например: Данте"/>
+        </div>
+        <div class="form-row">
+          <label>Email</label>
+          <input type="email" id="profileEmail" placeholder="name@mail.com"/>
+        </div>
+        <div class="form-row">
+          <label>Телефон</label>
+          <input type="tel" id="profilePhone" placeholder="+7 ..."/>
+        </div>
+        <div class="form-row">
+          <label>Город</label>
+          <input type="text" id="profileCity" placeholder="Город"/>
+        </div>
+        <div class="form-actions">
+          <button class="btn-primary" type="submit">Сохранить</button>
+          <button class="btn-ghost" type="button" id="resetProfileBtn">Сбросить</button>
+        </div>
+      </form>
+
+      <div class="card stats-card">
+        <h3>Статистика</h3>
+        <div class="stats">
+          <div class="stat">
+            <div class="stat-num" id="statFav">0</div>
+            <div class="stat-label">в избранном</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num" id="statCart">0</div>
+            <div class="stat-label">в корзине</div>
+          </div>
+        </div>
+        <div class="hint">
+          <b>Важно для диплома:</b> сейчас это “фронт”, без бэкенда. Дальше можно подключить API/парсер/агрегатор.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- МОДАЛКА -->
+  <div id="modalOverlay" class="modal-overlay hidden" role="dialog" aria-modal="true">
+    <div class="modal">
+      <button id="modalClose" class="modal-close" aria-label="Закрыть">✕</button>
+      <div class="modal-body">
+        <div class="modal-media">
+          <img id="modalImage" alt="Фото товара">
+        </div>
+        <div class="modal-info">
+          <h3 id="modalTitle"></h3>
+          <div class="modal-price" id="modalPrice"></div>
+          <div class="modal-meta" id="modalMeta"></div>
+
+          <div class="modal-actions">
+            <a id="modalGoLink" class="btn-primary" href="#" target="_blank" rel="noopener">Перейти на сайт</a>
+            <button id="modalFavBtn" class="btn-ghost" type="button">❤️ В избранное</button>
+            <button id="modalCartBtn" class="btn-ghost" type="button">🛒 В корзину</button>
+          </div>
+
+          <p class="muted small">
+            Мы не продаём товары — мы показываем предложения. Покупка происходит на сайте-источнике.
+          </p>
+        </div>
+>>>>>>> 0a73c6918dab013491d1070cf21c9fed4c46fb25
       </div>
     </div>
   </div>
 
+<<<<<<< HEAD
   <!-- УСПЕШНАЯ ОПЛАТА -->
   <div id="successModal" class="payment-overlay hidden">
     <div class="success-modal">
@@ -745,11 +860,19 @@
 
   <div id="toast" class="toast hidden"></div>
 
+=======
+  <!-- ФУТЕР -->
+>>>>>>> 0a73c6918dab013491d1070cf21c9fed4c46fb25
   <footer class="footer">
     <p>© 2025 Клик Маркет. Самые выгодные предложения — в один клик.</p>
   </footer>
 
   <script src="script.js"></script>
+<<<<<<< HEAD
   <script src="payment-fix.js"></script>
 </body>
 </html>
+=======
+</body>
+</html>
+>>>>>>> 0a73c6918dab013491d1070cf21c9fed4c46fb25

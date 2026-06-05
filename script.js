@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   // =========================
+<<<<<<< HEAD
   // ТОВАРЫ
   // =========================
   const PRODUCTS = [
@@ -16,10 +17,30 @@ document.addEventListener("DOMContentLoaded", () => {
       url: "https://www.ozon.ru/",
       image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=80",
       description: "Смартфон для повседневного использования с большим экраном и хорошей автономностью."
+=======
+  // ДЕМО-ДАННЫЕ (ТЕСТОВЫЕ ТОВАРЫ)
+  // картинки — Unsplash (обычно не блокируется, в отличие от маркетплейсов)
+  // =========================
+  const PRODUCTS = [
+    // ELECTRONICS
+    {
+      id: "e1",
+      category: "electronics",
+      name: "Смартфон Galaxy A15 (демо)",
+      price: 14990,
+      color: "Чёрный",
+      size: '6.5"',
+      article: "E-1001",
+      source: "Ozon",
+      url: "https://www.ozon.ru/",
+      image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1200&q=80",
+      description: "Смартфон с большим экраном, базовая камера, хороший вариант для повседневных задач."
+>>>>>>> 0a73c6918dab013491d1070cf21c9fed4c46fb25
     },
     {
       id: "e2",
       category: "electronics",
+<<<<<<< HEAD
       name: "Беспроводные наушники Xiaomi Buds",
       price: 4990,
       color: "Белый",
@@ -29,10 +50,22 @@ document.addEventListener("DOMContentLoaded", () => {
       url: "https://www.wildberries.ru/",
       image: "https://upload.wikimedia.org/wikipedia/commons/b/b4/Headphones_1.jpg",
       description: "Беспроводные наушники с кейсом, шумоподавлением и удобной посадкой."
+=======
+      name: "Наушники Xiaomi Buds (демо)",
+      price: 8990,
+      color: "Белый",
+      size: "Универсальный",
+      article: "E-1002",
+      source: "AliExpress",
+      url: "https://aliexpress.ru/",
+      image: "https://upload.wikimedia.org/wikipedia/commons/b/b4/Headphones_1.jpg",
+      description: "Беспроводные наушники: шумоподавление, кейс, комфортная посадка."
+>>>>>>> 0a73c6918dab013491d1070cf21c9fed4c46fb25
     },
     {
       id: "e3",
       category: "electronics",
+<<<<<<< HEAD
       name: "Ноутбук Lenovo IdeaPad 3",
       price: 35990,
       color: "Серый",
@@ -88,38 +121,75 @@ document.addEventListener("DOMContentLoaded", () => {
       id: "c1",
       category: "clothes",
       name: "Футболка Nike Air",
+=======
+      name: "Ноутбук IdeaPad 3 (демо)",
+      price: 35990,
+      color: "Серый",
+      size: '14"',
+      article: "E-1003",
+      source: "Wildberries",
+      url: "https://www.wildberries.ru/",
+      image: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=1200&q=80",
+      description: "Учёба, браузер, документы. Демо-карточка для примера выдачи."
+    },
+
+    // CLOTHES
+    {
+      id: "c1",
+      category: "clothes",
+      name: "Футболка Nike Air (демо)",
+>>>>>>> 0a73c6918dab013491d1070cf21c9fed4c46fb25
       price: 2490,
       color: "Белый",
       size: "M",
       article: "C-2001",
       source: "Lamoda",
       url: "https://www.lamoda.ru/",
+<<<<<<< HEAD
       image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=80",
       description: "Базовая хлопковая футболка для повседневного образа."
+=======
+      image: "https://images.unsplash.com/photo-1520975916090-3105956dac38?auto=format&fit=crop&w=1200&q=80",
+      description: "Базовая футболка, удобная посадка. Для примера фильтра по размеру/цвету."
+>>>>>>> 0a73c6918dab013491d1070cf21c9fed4c46fb25
     },
     {
       id: "c2",
       category: "clothes",
+<<<<<<< HEAD
       name: "Толстовка Adidas Originals",
+=======
+      name: "Толстовка Adidas Originals (демо)",
+>>>>>>> 0a73c6918dab013491d1070cf21c9fed4c46fb25
       price: 4990,
       color: "Чёрный",
       size: "L",
       article: "C-2002",
       source: "Ozon",
       url: "https://www.ozon.ru/",
+<<<<<<< HEAD
       image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=900&q=80",
       description: "Тёплая толстовка с капюшоном и карманом."
+=======
+      image: "https://images.unsplash.com/photo-1520975661595-6453be3f7070?auto=format&fit=crop&w=1200&q=80",
+      description: "Тёплая толстовка, капюшон, карман-кенгуру."
+>>>>>>> 0a73c6918dab013491d1070cf21c9fed4c46fb25
     },
     {
       id: "c3",
       category: "clothes",
+<<<<<<< HEAD
       name: "Кроссовки Puma RS-X",
+=======
+      name: "Кроссовки Puma RS-X (демо)",
+>>>>>>> 0a73c6918dab013491d1070cf21c9fed4c46fb25
       price: 8990,
       color: "Серый",
       size: "42",
       article: "C-2003",
       source: "Wildberries",
       url: "https://www.wildberries.ru/",
+<<<<<<< HEAD
       image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80",
       description: "Кроссовки для прогулок и повседневной носки."
     },
@@ -168,18 +238,35 @@ document.addEventListener("DOMContentLoaded", () => {
       id: "b1",
       category: "beauty",
       name: "Тональный крем Maybelline Fit Me",
+=======
+      image: "https://images.unsplash.com/photo-1528701800489-20be9c1ea0dc?auto=format&fit=crop&w=1200&q=80",
+      description: "Кроссовки: демо-товар для категории «Одежда»."
+    },
+
+    // BEAUTY
+    {
+      id: "b1",
+      category: "beauty",
+      name: "Тональный крем Fit Me (демо)",
+>>>>>>> 0a73c6918dab013491d1070cf21c9fed4c46fb25
       price: 590,
       color: "Натуральный",
       size: "30 мл",
       article: "B-3001",
       source: "Ozon",
       url: "https://www.ozon.ru/",
+<<<<<<< HEAD
       image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=900&q=80",
       description: "Тональный крем для выравнивания тона кожи."
+=======
+      image: "https://images.unsplash.com/photo-1612810806695-30f7a8253c45?auto=format&fit=crop&w=1200&q=80",
+      description: "Лёгкое покрытие, выравнивание тона. Демо для визуала."
+>>>>>>> 0a73c6918dab013491d1070cf21c9fed4c46fb25
     },
     {
       id: "b2",
       category: "beauty",
+<<<<<<< HEAD
       name: "Помада L'Oréal Paris Rouge",
       price: 690,
       color: "Красный",
@@ -189,17 +276,33 @@ document.addEventListener("DOMContentLoaded", () => {
       url: "https://www.lamoda.ru/",
       image: "https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=900&q=80",
       description: "Классическая помада насыщенного красного оттенка."
+=======
+      name: "Помада Rouge (демо)",
+      price: 690,
+      color: "Красный",
+      size: "3.5 г",
+      article: "B-3002",
+      source: "Lamoda",
+      url: "https://www.lamoda.ru/",
+      image: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1200&q=80",
+      description: "Яркий оттенок, демо-описание для карточки."
+>>>>>>> 0a73c6918dab013491d1070cf21c9fed4c46fb25
     },
     {
       id: "b3",
       category: "beauty",
+<<<<<<< HEAD
       name: "Парфюм Dior Sauvage",
+=======
+      name: "Парфюм Sauvage (демо)",
+>>>>>>> 0a73c6918dab013491d1070cf21c9fed4c46fb25
       price: 11990,
       color: "—",
       size: "60 мл",
       article: "B-3003",
       source: "Wildberries",
       url: "https://www.wildberries.ru/",
+<<<<<<< HEAD
       image: "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=900&q=80",
       description: "Парфюм с ярким и стойким ароматом."
     },
@@ -256,10 +359,30 @@ document.addEventListener("DOMContentLoaded", () => {
       url: "https://aliexpress.ru/",
       image: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=900&q=80",
       description: "Настольная лампа для рабочего места с мягким светом."
+=======
+      image: "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=1200&q=80",
+      description: "Демо-товар: пример цены, источника и описания."
+    },
+
+    // HOME
+    {
+      id: "h1",
+      category: "home",
+      name: "Чайник электрический (демо)",
+      price: 1990,
+      color: "Белый",
+      size: "1.7 л",
+      article: "H-4001",
+      source: "Ozon",
+      url: "https://www.ozon.ru/",
+      image: "https://images.unsplash.com/photo-1545223124-5d2f6c59a8f5?auto=format&fit=crop&w=1200&q=80",
+      description: "Быстрый нагрев, автоотключение. Демо для каталога."
+>>>>>>> 0a73c6918dab013491d1070cf21c9fed4c46fb25
     },
     {
       id: "h2",
       category: "home",
+<<<<<<< HEAD
       name: "Электрочайник",
       price: 2490,
       color: "Белый",
@@ -269,10 +392,22 @@ document.addEventListener("DOMContentLoaded", () => {
       url: "https://www.ozon.ru/",
       image: "https://images.unsplash.com/photo-1571939228382-b2f2b585ce15?auto=format&fit=crop&w=900&q=80",
       description: "Электрочайник с быстрым нагревом и автоотключением."
+=======
+      name: "Настольная лампа (демо)",
+      price: 1590,
+      color: "Чёрный",
+      size: "—",
+      article: "H-4002",
+      source: "AliExpress",
+      url: "https://aliexpress.ru/",
+      image: "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=1200&q=80",
+      description: "Тёплый свет, минимализм. Демо-карточка."
+>>>>>>> 0a73c6918dab013491d1070cf21c9fed4c46fb25
     },
     {
       id: "h3",
       category: "home",
+<<<<<<< HEAD
       name: "Робот-пылесос Xiaomi",
       price: 24990,
       color: "Белый",
@@ -336,6 +471,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // =========================
   // ЭЛЕМЕНТЫ
+=======
+      name: "Робот-пылесос (демо)",
+      price: 24990,
+      color: "Белый",
+      size: "—",
+      article: "H-4003",
+      source: "Wildberries",
+      url: "https://www.wildberries.ru/",
+      image: "https://images.unsplash.com/photo-1581579185169-02b1298c8b39?auto=format&fit=crop&w=1200&q=80",
+      description: "Автоуборка, расписание. Демо для категории «Для дома»."
+    },
+  ];
+
+  // =========================
+  // DOM
+>>>>>>> 0a73c6918dab013491d1070cf21c9fed4c46fb25
   // =========================
   const homePage = document.getElementById("homePage");
   const favoritesPage = document.getElementById("favoritesPage");
@@ -346,12 +497,20 @@ document.addEventListener("DOMContentLoaded", () => {
   const favBadge = document.getElementById("favBadge");
   const cartBadge = document.getElementById("cartBadge");
 
+<<<<<<< HEAD
   const catButtons = document.querySelectorAll(".cat-card");
   const catalog = document.getElementById("catalog");
   const catalogTitle = document.getElementById("catalogTitle");
   const backToCategories = document.getElementById("backToCategories");
   const productsGrid = document.getElementById("productsGrid");
 
+=======
+  const catalog = document.getElementById("catalog");
+  const catalogTitle = document.getElementById("catalogTitle");
+  const backToCategories = document.getElementById("backToCategories");
+
+  const productsGrid = document.getElementById("productsGrid");
+>>>>>>> 0a73c6918dab013491d1070cf21c9fed4c46fb25
   const searchInput = document.getElementById("searchInput");
   const searchDropdown = document.getElementById("searchDropdown");
   const colorSelect = document.getElementById("colorSelect");
@@ -361,10 +520,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const favoritesGrid = document.getElementById("favoritesGrid");
   const favoritesEmpty = document.getElementById("favoritesEmpty");
 
+<<<<<<< HEAD
   const recommendationsGrid = document.getElementById("recommendationsGrid");
   const goShoppingFromFav = document.getElementById("goShoppingFromFav");
   const refreshRecommendations = document.getElementById("refreshRecommendations");
 
+=======
+>>>>>>> 0a73c6918dab013491d1070cf21c9fed4c46fb25
   const cartList = document.getElementById("cartList");
   const cartEmpty = document.getElementById("cartEmpty");
   const cartTotal = document.getElementById("cartTotal");
@@ -379,6 +541,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const statFav = document.getElementById("statFav");
   const statCart = document.getElementById("statCart");
 
+<<<<<<< HEAD
+=======
+  // modal
+>>>>>>> 0a73c6918dab013491d1070cf21c9fed4c46fb25
   const modalOverlay = document.getElementById("modalOverlay");
   const modalClose = document.getElementById("modalClose");
   const modalImage = document.getElementById("modalImage");
@@ -389,6 +555,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const modalFavBtn = document.getElementById("modalFavBtn");
   const modalCartBtn = document.getElementById("modalCartBtn");
 
+<<<<<<< HEAD
   const startSearchBtn = document.getElementById("startSearchBtn");
   const howItWorksBtn = document.getElementById("howItWorksBtn");
   const ctaSearchBtn = document.getElementById("ctaSearchBtn");
@@ -429,15 +596,48 @@ document.addEventListener("DOMContentLoaded", () => {
     navLinks.forEach(link => {
       link.classList.toggle("is-active", link.dataset.action === action);
     });
+=======
+  // =========================
+  // STORAGE
+  // =========================
+  const LS_FAV = "clickmarket_favorites";
+  const LS_CART = "clickmarket_cart";
+  const LS_PROFILE = "clickmarket_profile";
+
+  const getFavIds = () => new Set(JSON.parse(localStorage.getItem(LS_FAV) || "[]"));
+  const setFavIds = (set) => localStorage.setItem(LS_FAV, JSON.stringify([...set]));
+
+  // cart: {id: qty}
+  const getCart = () => JSON.parse(localStorage.getItem(LS_CART) || "{}");
+  const setCart = (obj) => localStorage.setItem(LS_CART, JSON.stringify(obj));
+
+  const fmt = (n) => new Intl.NumberFormat("ru-RU").format(n) + " ₽";
+
+  let activeCategory = null;
+  let modalProductId = null;
+
+  // =========================
+  // NAVIGATION (SPA)
+  // =========================
+  function setActiveNav(action) {
+    navLinks.forEach(a => a.classList.toggle("is-active", a.dataset.action === action));
+>>>>>>> 0a73c6918dab013491d1070cf21c9fed4c46fb25
   }
 
   function showPage(action) {
     setActiveNav(action);
 
+<<<<<<< HEAD
     if (homePage) homePage.classList.toggle("hidden", action !== "home");
     if (favoritesPage) favoritesPage.classList.toggle("hidden", action !== "favorites");
     if (cartPage) cartPage.classList.toggle("hidden", action !== "cart");
     if (profilePage) profilePage.classList.toggle("hidden", action !== "profile");
+=======
+    homePage.classList.toggle("hidden", action !== "home");
+    favoritesPage.classList.toggle("hidden", action !== "favorites");
+    cartPage.classList.toggle("hidden", action !== "cart");
+    profilePage.classList.toggle("hidden", action !== "profile");
+>>>>>>> 0a73c6918dab013491d1070cf21c9fed4c46fb25
 
     if (action === "favorites") renderFavorites();
     if (action === "cart") renderCart();
@@ -447,13 +647,21 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   navLinks.forEach(link => {
+<<<<<<< HEAD
     link.addEventListener("click", event => {
       event.preventDefault();
       showPage(link.dataset.action || "home");
+=======
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      const action = link.dataset.action;
+      showPage(action);
+>>>>>>> 0a73c6918dab013491d1070cf21c9fed4c46fb25
     });
   });
 
   // =========================
+<<<<<<< HEAD
   // КАТЕГОРИИ
   // =========================
   function categoryName(category) {
@@ -573,11 +781,117 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     element.addEventListener("change", () => {
+=======
+  // CATEGORY -> CATALOG
+  // =========================
+  const catButtons = document.querySelectorAll(".cat-card");
+
+  catButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const cat = btn.dataset.category;
+      activeCategory = cat;
+
+      catButtons.forEach(b => b.classList.toggle("is-active", b.dataset.category === cat));
+
+      catalogTitle.textContent = categoryName(cat);
+      catalog.classList.remove("hidden");
+
+      // reset filters
+      searchInput.value = "";
+      priceSelect.value = "";
+      buildFilterOptions(cat);
+
+      renderCatalog();
+      closeDropdown();
+
+      // прокрутка к каталогу (чтобы товары были ниже категорий)
+      catalog.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  });
+
+  backToCategories.addEventListener("click", () => {
+    activeCategory = null;
+    catalog.classList.add("hidden");
+    catButtons.forEach(b => b.classList.remove("is-active"));
+    closeDropdown();
+  });
+
+  function categoryName(cat){
+    return ({
+      electronics: "Электроника",
+      clothes: "Одежда",
+      beauty: "Косметика",
+      home: "Для дома",
+    })[cat] || "Каталог";
+  }
+
+  // =========================
+  // FILTERS & SEARCH
+  // =========================
+  function buildFilterOptions(cat){
+    const items = PRODUCTS.filter(p => p.category === cat);
+
+    const colors = uniq(items.map(p => p.color).filter(Boolean));
+    const sizes = uniq(items.map(p => p.size).filter(Boolean));
+
+    fillSelect(colorSelect, colors, "Любой");
+    fillSelect(sizeSelect, sizes, "Любой");
+  }
+
+  function fillSelect(select, values, defaultText){
+    select.innerHTML = "";
+    const opt0 = document.createElement("option");
+    opt0.value = "";
+    opt0.textContent = defaultText;
+    select.appendChild(opt0);
+
+    values.forEach(v => {
+      const o = document.createElement("option");
+      o.value = v;
+      o.textContent = v;
+      select.appendChild(o);
+    });
+  }
+
+  function uniq(arr){
+    return [...new Set(arr)].sort((a,b) => String(a).localeCompare(String(b), "ru"));
+  }
+
+  function parsePriceRange(val){
+    if (!val) return null;
+    const [a,b] = val.split("-").map(Number);
+    if (Number.isFinite(a) && Number.isFinite(b)) return {min:a, max:b};
+    return null;
+  }
+
+  function applyFilters(items){
+    const q = searchInput.value.trim().toLowerCase();
+    const color = colorSelect.value;
+    const size = sizeSelect.value;
+    const pr = parsePriceRange(priceSelect.value);
+
+    return items.filter(p => {
+      const okQ = !q || p.name.toLowerCase().includes(q) || (p.description || "").toLowerCase().includes(q);
+      const okC = !color || p.color === color;
+      const okS = !size || p.size === size;
+      const okP = !pr || (p.price >= pr.min && p.price <= pr.max);
+      return okQ && okC && okS && okP;
+    });
+  }
+
+  [searchInput, colorSelect, sizeSelect, priceSelect].forEach(el => {
+    el.addEventListener("input", () => {
+      renderCatalog();
+      renderDropdown();
+    });
+    el.addEventListener("change", () => {
+>>>>>>> 0a73c6918dab013491d1070cf21c9fed4c46fb25
       renderCatalog();
       renderDropdown();
     });
   });
 
+<<<<<<< HEAD
   function renderDropdown() {
     if (!activeCategory || !searchDropdown || !searchInput) return;
 
@@ -611,19 +925,56 @@ document.addEventListener("DOMContentLoaded", () => {
         openModal(product.id);
       });
 
+=======
+  document.addEventListener("click", (e) => {
+    if (!searchDropdown.contains(e.target) && e.target !== searchInput) closeDropdown();
+  });
+
+  function renderDropdown(){
+    if (!activeCategory) return;
+
+    const q = searchInput.value.trim().toLowerCase();
+    if (!q) { closeDropdown(); return; }
+
+    const base = PRODUCTS.filter(p => p.category === activeCategory);
+    const filtered = applyFilters(base)
+      .slice()
+      .sort((a,b) => a.price - b.price)
+      .slice(0, 6);
+
+    if (filtered.length === 0) { closeDropdown(); return; }
+
+    searchDropdown.innerHTML = "";
+    filtered.forEach(p => {
+      const row = document.createElement("div");
+      row.className = "dd-item";
+      row.innerHTML = `
+        <div class="dd-name">${escapeHtml(p.name)}</div>
+        <div class="dd-price">${fmt(p.price)}</div>
+      `;
+      row.addEventListener("click", () => {
+        closeDropdown();
+        openModal(p.id);
+      });
+>>>>>>> 0a73c6918dab013491d1070cf21c9fed4c46fb25
       searchDropdown.appendChild(row);
     });
 
     searchDropdown.classList.remove("hidden");
   }
 
+<<<<<<< HEAD
   function closeDropdown() {
     if (!searchDropdown) return;
 
+=======
+  function closeDropdown(){
+>>>>>>> 0a73c6918dab013491d1070cf21c9fed4c46fb25
     searchDropdown.classList.add("hidden");
     searchDropdown.innerHTML = "";
   }
 
+<<<<<<< HEAD
   document.addEventListener("click", event => {
     if (!searchDropdown || !searchInput) return;
 
@@ -650,11 +1001,32 @@ document.addEventListener("DOMContentLoaded", () => {
 
     items.forEach(product => {
       productsGrid.appendChild(createProductCard(product));
+=======
+  // =========================
+  // CATALOG RENDER
+  // =========================
+  function renderCatalog(){
+    if (!activeCategory) return;
+
+    const base = PRODUCTS.filter(p => p.category === activeCategory);
+    const items = applyFilters(base).slice().sort((a,b) => a.price - b.price);
+
+    productsGrid.innerHTML = "";
+
+    if (items.length === 0){
+      productsGrid.innerHTML = `<div class="empty">Ничего не найдено по фильтрам.</div>`;
+      return;
+    }
+
+    items.forEach(p => {
+      productsGrid.appendChild(productCard(p));
+>>>>>>> 0a73c6918dab013491d1070cf21c9fed4c46fb25
     });
 
     updateBadgesAndStats();
   }
 
+<<<<<<< HEAD
   function createProductCard(product) {
     const favIds = getFavIds();
     const cart = getCart();
@@ -682,12 +1054,38 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="p-actions">
           <button class="btn-primary" type="button">Подробнее</button>
           <button class="btn-ghost" type="button">${isInCart ? "В корзине" : "В корзину"}</button>
+=======
+  function productCard(p){
+    const favIds = getFavIds();
+    const cart = getCart();
+
+    const card = document.createElement("div");
+    card.className = "card";
+
+    const isFav = favIds.has(p.id);
+    const inCart = Boolean(cart[p.id]);
+
+    card.innerHTML = `
+      <img class="p-img" src="${p.image}" alt="${escapeHtml(p.name)}">
+      <div class="p-body">
+        <div class="p-top">
+          <h3 class="p-title">${escapeHtml(p.name)}</h3>
+          <button class="icon-btn ${isFav ? "is-on" : ""}" title="В избранное">${isFav ? "❤️" : "🤍"}</button>
+        </div>
+        <div class="p-source">${escapeHtml(p.source)}</div>
+        <div class="p-price">${fmt(p.price)}</div>
+
+        <div class="p-actions">
+          <button class="btn-primary">Подробнее</button>
+          <button class="btn-ghost">${inCart ? "В корзине" : "В корзину"}</button>
+>>>>>>> 0a73c6918dab013491d1070cf21c9fed4c46fb25
         </div>
       </div>
     `;
 
     const img = card.querySelector(".p-img");
     img.addEventListener("error", () => {
+<<<<<<< HEAD
       img.src = getFallbackImage(product.category);
     });
 
@@ -716,6 +1114,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
     card.querySelector(".btn-ghost").addEventListener("click", () => {
       addToCart(product.id, 1);
+=======
+      // безопасный фолбэк, если картинка вдруг не грузится
+      img.src = "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=60";
+    });
+
+    const favBtn = card.querySelector(".icon-btn");
+    favBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      toggleFavorite(p.id);
+      renderCatalog();
+    });
+
+    const moreBtn = card.querySelector(".btn-primary");
+    moreBtn.addEventListener("click", () => openModal(p.id));
+
+    const cartBtn = card.querySelectorAll(".btn-ghost")[0];
+    cartBtn.addEventListener("click", () => {
+      addToCart(p.id, 1);
+>>>>>>> 0a73c6918dab013491d1070cf21c9fed4c46fb25
       renderCatalog();
     });
 
@@ -723,6 +1140,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // =========================
+<<<<<<< HEAD
   // ИЗБРАННОЕ
   // =========================
   function toggleFavorite(id) {
@@ -766,11 +1184,39 @@ document.addEventListener("DOMContentLoaded", () => {
   function createFavoriteCard(product) {
     const cart = getCart();
     const isInCart = Boolean(cart[product.id]);
+=======
+  // FAVORITES
+  // =========================
+  function toggleFavorite(id){
+    const fav = getFavIds();
+    if (fav.has(id)) fav.delete(id);
+    else fav.add(id);
+    setFavIds(fav);
+    updateBadgesAndStats();
+  }
+
+  function renderFavorites(){
+    const fav = getFavIds();
+    const items = PRODUCTS.filter(p => fav.has(p.id)).sort((a,b) => a.price - b.price);
+
+    favoritesGrid.innerHTML = "";
+    favoritesEmpty.classList.toggle("hidden", items.length !== 0);
+
+    items.forEach(p => favoritesGrid.appendChild(productCardForFav(p)));
+
+    updateBadgesAndStats();
+  }
+
+  function productCardForFav(p){
+    const cart = getCart();
+    const inCart = Boolean(cart[p.id]);
+>>>>>>> 0a73c6918dab013491d1070cf21c9fed4c46fb25
 
     const card = document.createElement("div");
     card.className = "card";
 
     card.innerHTML = `
+<<<<<<< HEAD
       <img class="p-img" src="${product.image || ""}" alt="${escapeHtml(product.name)}">
 
       <div class="p-body">
@@ -785,12 +1231,27 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="p-actions">
           <button class="btn-primary" type="button">Подробнее</button>
           <button class="btn-ghost" type="button">${isInCart ? "В корзине" : "В корзину"}</button>
+=======
+      <img class="p-img" src="${p.image}" alt="${escapeHtml(p.name)}">
+      <div class="p-body">
+        <div class="p-top">
+          <h3 class="p-title">${escapeHtml(p.name)}</h3>
+          <button class="icon-btn is-on" title="Убрать из избранного">❤️</button>
+        </div>
+        <div class="p-source">${escapeHtml(p.source)}</div>
+        <div class="p-price">${fmt(p.price)}</div>
+
+        <div class="p-actions">
+          <button class="btn-primary">Подробнее</button>
+          <button class="btn-ghost">${inCart ? "В корзине" : "В корзину"}</button>
+>>>>>>> 0a73c6918dab013491d1070cf21c9fed4c46fb25
         </div>
       </div>
     `;
 
     const img = card.querySelector(".p-img");
     img.addEventListener("error", () => {
+<<<<<<< HEAD
       img.src = getFallbackImage(product.category);
     });
 
@@ -809,12 +1270,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
     card.querySelector(".btn-ghost").addEventListener("click", () => {
       addToCart(product.id, 1);
+=======
+      img.src = "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=60";
+    });
+
+    const favBtn = card.querySelector(".icon-btn");
+    favBtn.addEventListener("click", () => {
+      toggleFavorite(p.id);
+      renderFavorites();
+    });
+
+    card.querySelector(".btn-primary").addEventListener("click", () => openModal(p.id));
+    card.querySelector(".btn-ghost").addEventListener("click", () => {
+      addToCart(p.id, 1);
+>>>>>>> 0a73c6918dab013491d1070cf21c9fed4c46fb25
       renderFavorites();
     });
 
     return card;
   }
 
+<<<<<<< HEAD
   function renderRecommendations() {
     if (!recommendationsGrid) return;
 
@@ -866,10 +1342,20 @@ document.addEventListener("DOMContentLoaded", () => {
       delete cart[id];
     }
 
+=======
+  // =========================
+  // CART
+  // =========================
+  function addToCart(id, qty){
+    const cart = getCart();
+    cart[id] = (cart[id] || 0) + qty;
+    if (cart[id] <= 0) delete cart[id];
+>>>>>>> 0a73c6918dab013491d1070cf21c9fed4c46fb25
     setCart(cart);
     updateBadgesAndStats();
   }
 
+<<<<<<< HEAD
   function setCartQty(id, qty) {
     const cart = getCart();
 
@@ -879,10 +1365,17 @@ document.addEventListener("DOMContentLoaded", () => {
       cart[id] = qty;
     }
 
+=======
+  function setCartQty(id, qty){
+    const cart = getCart();
+    if (qty <= 0) delete cart[id];
+    else cart[id] = qty;
+>>>>>>> 0a73c6918dab013491d1070cf21c9fed4c46fb25
     setCart(cart);
     updateBadgesAndStats();
   }
 
+<<<<<<< HEAD
   function renderCart() {
     if (!cartList || !cartEmpty || !cartTotal) return;
 
@@ -890,11 +1383,19 @@ document.addEventListener("DOMContentLoaded", () => {
     const ids = Object.keys(cart);
 
     cartList.innerHTML = "";
+=======
+  function renderCart(){
+    const cart = getCart();
+    const ids = Object.keys(cart);
+    cartList.innerHTML = "";
+
+>>>>>>> 0a73c6918dab013491d1070cf21c9fed4c46fb25
     cartEmpty.classList.toggle("hidden", ids.length !== 0);
 
     let total = 0;
 
     ids.forEach(id => {
+<<<<<<< HEAD
       const product = PRODUCTS.find(item => item.id === id);
       if (!product) return;
 
@@ -930,11 +1431,41 @@ document.addEventListener("DOMContentLoaded", () => {
 
           <strong>${formatPrice(sum)}</strong>
           <button class="btn-ghost" type="button" data-action="remove">Удалить</button>
+=======
+      const p = PRODUCTS.find(x => x.id === id);
+      if (!p) return;
+
+      const qty = cart[id];
+      total += p.price * qty;
+
+      const row = document.createElement("div");
+      row.className = "cart-item";
+      row.innerHTML = `
+        <img class="cart-thumb" src="${p.image}" alt="${escapeHtml(p.name)}">
+        <div>
+          <p class="cart-title">${escapeHtml(p.name)}</p>
+          <div class="cart-meta">
+            ${escapeHtml(p.source)} • Артикул: ${escapeHtml(p.article)} • Цвет: ${escapeHtml(p.color)} • Размер: ${escapeHtml(p.size)}
+          </div>
+          <div class="cart-meta">
+            Ссылка: <a href="${p.url}" target="_blank" rel="noopener">перейти на сайт</a>
+          </div>
+        </div>
+        <div class="cart-right">
+          <div class="qty">
+            <button type="button" data-q="-">−</button>
+            <span>${qty}</span>
+            <button type="button" data-q="+">+</button>
+          </div>
+          <strong>${fmt(p.price * qty)}</strong>
+          <button class="btn-ghost" type="button">Удалить</button>
+>>>>>>> 0a73c6918dab013491d1070cf21c9fed4c46fb25
         </div>
       `;
 
       const img = row.querySelector(".cart-thumb");
       img.addEventListener("error", () => {
+<<<<<<< HEAD
         img.src = getFallbackImage(product.category);
       });
 
@@ -944,11 +1475,25 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
       row.querySelector('[data-action="plus"]').addEventListener("click", () => {
+=======
+        img.src = "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=60";
+      });
+
+      row.querySelector('[data-q="-"]').addEventListener("click", () => {
+        setCartQty(id, qty - 1);
+        renderCart();
+      });
+      row.querySelector('[data-q="+"]').addEventListener("click", () => {
+>>>>>>> 0a73c6918dab013491d1070cf21c9fed4c46fb25
         setCartQty(id, qty + 1);
         renderCart();
       });
 
+<<<<<<< HEAD
       row.querySelector('[data-action="remove"]').addEventListener("click", () => {
+=======
+      row.querySelector(".btn-ghost").addEventListener("click", () => {
+>>>>>>> 0a73c6918dab013491d1070cf21c9fed4c46fb25
         setCartQty(id, 0);
         renderCart();
       });
@@ -956,6 +1501,7 @@ document.addEventListener("DOMContentLoaded", () => {
       cartList.appendChild(row);
     });
 
+<<<<<<< HEAD
     cartTotal.textContent = formatPrice(total);
     updateBadgesAndStats();
   }
@@ -982,10 +1528,43 @@ document.addEventListener("DOMContentLoaded", () => {
     if (profileEmail) profileEmail.value = profile.email || "";
     if (profilePhone) profilePhone.value = profile.phone || "";
     if (profileCity) profileCity.value = profile.city || "";
+=======
+    cartTotal.textContent = fmt(total);
+    updateBadgesAndStats();
+  }
+
+  checkoutBtn.addEventListener("click", () => {
+    const cart = getCart();
+    const ids = Object.keys(cart);
+    if (ids.length === 0){
+      alert("Корзина пустая 🙂");
+      return;
+    }
+    alert("Демо: оформление заказа. В реальном проекте тут будет переход/интеграция с источником или сбор ссылок.");
+  });
+
+  // =========================
+  // PROFILE
+  // =========================
+  function loadProfile(){
+    return JSON.parse(localStorage.getItem(LS_PROFILE) || "{}");
+  }
+  function saveProfile(obj){
+    localStorage.setItem(LS_PROFILE, JSON.stringify(obj));
+  }
+
+  function renderProfile(){
+    const p = loadProfile();
+    profileName.value = p.name || "";
+    profileEmail.value = p.email || "";
+    profilePhone.value = p.phone || "";
+    profileCity.value = p.city || "";
+>>>>>>> 0a73c6918dab013491d1070cf21c9fed4c46fb25
 
     updateBadgesAndStats();
   }
 
+<<<<<<< HEAD
   if (profileForm) {
     profileForm.addEventListener("submit", event => {
       event.preventDefault();
@@ -1055,19 +1634,75 @@ document.addEventListener("DOMContentLoaded", () => {
         ? "🛒 Добавить ещё"
         : "🛒 В корзину";
     }
+=======
+  profileForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const obj = {
+      name: profileName.value.trim(),
+      email: profileEmail.value.trim(),
+      phone: profilePhone.value.trim(),
+      city: profileCity.value.trim(),
+    };
+    saveProfile(obj);
+    alert("Профиль сохранён ✅");
+  });
+
+  resetProfileBtn.addEventListener("click", () => {
+    localStorage.removeItem(LS_PROFILE);
+    renderProfile();
+    alert("Профиль сброшен.");
+  });
+
+  // =========================
+  // MODAL
+  // =========================
+  function openModal(id){
+    const p = PRODUCTS.find(x => x.id === id);
+    if (!p) return;
+
+    modalProductId = id;
+
+    modalTitle.textContent = p.name;
+    modalPrice.textContent = `Цена: ${fmt(p.price)}`;
+    modalMeta.innerHTML = `
+      <div><b>Источник:</b> ${escapeHtml(p.source)}</div>
+      <div><b>Артикул:</b> ${escapeHtml(p.article)}</div>
+      <div><b>Цвет:</b> ${escapeHtml(p.color)}</div>
+      <div><b>Размер:</b> ${escapeHtml(p.size)}</div>
+      <div style="margin-top:10px"><b>Описание:</b> ${escapeHtml(p.description || "—")}</div>
+    `;
+
+    modalGoLink.href = p.url;
+
+    modalImage.src = p.image;
+    modalImage.onerror = () => {
+      modalImage.src = "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=60";
+    };
+
+    const fav = getFavIds();
+    const cart = getCart();
+
+    modalFavBtn.textContent = fav.has(id) ? "❤️ Убрать из избранного" : "❤️ В избранное";
+    modalCartBtn.textContent = cart[id] ? "🛒 Добавить ещё" : "🛒 В корзину";
+>>>>>>> 0a73c6918dab013491d1070cf21c9fed4c46fb25
 
     modalOverlay.classList.remove("hidden");
     document.body.style.overflow = "hidden";
   }
 
+<<<<<<< HEAD
   function closeModal() {
     if (!modalOverlay) return;
 
+=======
+  function closeModal(){
+>>>>>>> 0a73c6918dab013491d1070cf21c9fed4c46fb25
     modalOverlay.classList.add("hidden");
     document.body.style.overflow = "";
     modalProductId = null;
   }
 
+<<<<<<< HEAD
   if (modalClose) {
     modalClose.addEventListener("click", closeModal);
   }
@@ -1212,3 +1847,73 @@ document.addEventListener("DOMContentLoaded", () => {
 
   console.log("Клик Маркет запущен ✅");
 });
+=======
+  modalClose.addEventListener("click", closeModal);
+  modalOverlay.addEventListener("click", (e) => {
+    if (e.target === modalOverlay) closeModal();
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && !modalOverlay.classList.contains("hidden")) closeModal();
+  });
+
+  modalFavBtn.addEventListener("click", () => {
+    if (!modalProductId) return;
+    toggleFavorite(modalProductId);
+    openModal(modalProductId); // обновим текст кнопок
+    // если сейчас открыта страница избранного — перерисуем
+    if (!favoritesPage.classList.contains("hidden")) renderFavorites();
+    if (activeCategory) renderCatalog();
+  });
+
+  modalCartBtn.addEventListener("click", () => {
+    if (!modalProductId) return;
+    addToCart(modalProductId, 1);
+    openModal(modalProductId);
+    if (!cartPage.classList.contains("hidden")) renderCart();
+    if (activeCategory) renderCatalog();
+  });
+
+  // =========================
+  // BADGES / STATS
+  // =========================
+  function updateBadgesAndStats(){
+    const fav = getFavIds();
+    const cart = getCart();
+
+    const favCount = fav.size;
+    const cartCount = Object.values(cart).reduce((s,n) => s + n, 0);
+
+    if (favCount > 0){
+      favBadge.textContent = favCount;
+      favBadge.classList.remove("hidden");
+    } else {
+      favBadge.classList.add("hidden");
+    }
+
+    if (cartCount > 0){
+      cartBadge.textContent = cartCount;
+      cartBadge.classList.remove("hidden");
+    } else {
+      cartBadge.classList.add("hidden");
+    }
+
+    statFav.textContent = favCount;
+    statCart.textContent = cartCount;
+  }
+
+  // =========================
+  // HELPERS
+  // =========================
+  function escapeHtml(str){
+    return String(str).replace(/[&<>"']/g, (m) => ({
+      "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"
+    })[m]);
+  }
+
+  // =========================
+  // INIT
+  // =========================
+  updateBadgesAndStats();
+  showPage("home");
+});
+>>>>>>> 0a73c6918dab013491d1070cf21c9fed4c46fb25
