@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
       image: "https://upload.wikimedia.org/wikipedia/commons/b/b4/Headphones_1.jpg",
       description: "Беспроводные наушники с кейсом, шумоподавлением и удобной посадкой."
     },
-    {
+    {привет
       id: "e3",
       category: "electronics",
       name: "Ноутбук Lenovo IdeaPad 3",
